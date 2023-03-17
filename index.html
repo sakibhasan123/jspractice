@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Question1.Count Characters</h1>
+    <h2>Answer.</h2>
+    <pre>
+        const countCharacters = (S) => {
+  let countA = 0, countD = 0;
+  for(let i = 0; i < S.length; i++){
+    if(S[i] === 'A') countA++;
+    else if(S[i] === 'D') countD++;
+  }
+  const arr = [countA, countD];
+  return arr;
+};
+
+    </pre>
+     <h1>Question2. Count the Heads</h1>
+    <h2>Answer.</h2>
+    <pre>
+        var Count_Occ = (s) => {
+  
+const countHead = {};
+// console.log(s.split(''), s.split('').sort(), s.split('').sort().join(''));
+const so = s.split('').sort().join('');
+let char, i, count, str = '';
+
+for (i = 0; i < so.length; ++i) {
+  char = so.charAt(i);
+  count = countHead[char];
+  countHead[char] = count ? count + 1: 1;
+}
+for (char in countHead) {
+  if(char!=' ' && countHead[char] > 1)
+    str += char + countHead[char];
+}
+return str;
+};
+ 
+    </pre>
+     <h1>Question3. Count the Vowels</h1>
+    <h2>Answer.</h2>
+    <pre>
+        var Count_Vowels= (S) => {
+  const s = S.toLowerCase();
+  let count = 0;
+  for(let i = 0; i < s.length; i++){
+    if(s[i] === 'a' || s[i] === 'e' || s[i] === 'i' || s[i] === 'o' || s[i] === 'u') count++;
+  }
+  return count;
+};
+    </pre>
+     <h1>Question4. Concatenate the Strings</h1>
+    <h2>Answer.</h2>
+    <pre>
+        var Concatenate_Strings = (S1, S2) => 
+{
+  return S1 + S2;  
+};
+ 
+    </pre>
+     <h1>Question5. Find Length</h1>
+    <h2>Answer.</h2>
+    <pre>
+        
+const findLength = (S) => {
+  let count = 0;
+  for(let i = 0; i < S.length; i++) count++;
+  return count;
+};
+ 
+
+    </pre>
+     <h1>Question6. Find the Winner</h1>
+    <h2>Answer.</h2>
+    <pre>
+        var Game_Winner = (S) => {
+  let countA = 0, countD = 0;
+  for(let i = 0; i < S.length; i++){
+    if(S[i] === 'A') countA++;
+    else if(S[i] === 'D') countD++;
+  }
+  if(countA > countD) return 'Aditya';
+  else if(countA < countD) return 'Danish';
+  return 'Draw';
+}
+ 
+    </pre>
+     <h1>Question7. Join Strings</h1>
+    <h2>Answer.</h2>
+    <pre>
+        const joinStrings = (S, P) => {
+  return S + P;
+};
+    </pre>
+     <h1>Question8. Plaindrome Check</h1>
+    <h2>Answer.</h2>
+    <pre>
+        var Palin_Check = (str) => {
+  
+  let rev = '';
+    for(let i = str.length - 1; i >= 0; i--){
+      rev += str[i];
+    }
+    
+  if(rev === str) return 'True';
+  return 'False';
+    
+// 	if(str === str.split('').reverse().join('')) return 'True';
+// 	return 'False';
+}
+
+    </pre>
+     <h1>Question9.Reverse the String</h1>
+    <h2>Answer.</h2>
+    <pre>
+        var Reverse_String = (str) => 
+{
+    let rev = '';
+    for(let i = str.length - 1; i >= 0; i--){
+      rev += str[i];
+    }
+    return rev;
+};
+ 
+    </pre>
+     <h1>Question10.Match the Strings</h1>
+    <h2>Answer.</h2>
+    <pre>
+        var String_Match = (S1,S2) => {
+  if(S1 !== S2) return 'NO';
+  return 'YES';
+};
+ 
+    </pre>
+     <h1>Question11.String Replace</h1>
+    <h2>Answer.</h2>
+    <pre>
+        
+var Replace = (S, pattern , text) => 
+{
+  return S.replace(pattern, text);  
+};
+ 
+
+    </pre>
+    
+    <h1>Qustion12.Split the String</h1>
+    <h2>Answer.</h2>
+    <pre>
+
+var Split_the_string = (S) => {
+  return S.split(' ');
+};
+ 
+
+    </pre>
+    <h1>Qustion.13 Count the Vowels and Consonants</h1>
+    <h2>Answer.</h2>
+    <pre>
+        var Count_Vowels= (S) => 
+{
+  const s = S.toLowerCase();
+  let count = 0;
+  for(let i = 0; i < s.length; i++){
+    if(s[i] === 'a' || s[i] === 'e' || s[i] === 'i' || s[i] === 'o' || s[i] === 'u') count++;
+  }
+  return count;
+};
+var Count_Consonants= (S) => 
+{const s = S.toLowerCase();
+  let count = 0;
+  for(let i = 0; i < s.length; i++){
+    if(s[i] === 'a' || s[i] === 'e' || s[i] === 'i' || s[i] === 'o' || s[i] === 'u') count++;
+  }
+  return s.length - count;
+       
+};
+    </pre>
+    
+</body>
+</html>

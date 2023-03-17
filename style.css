@@ -1,0 +1,19 @@
+h1{
+    height: auto;
+    background-color: brown;
+    color: aliceblue;
+    text-align: center;
+}
+h2{
+    height: auto;
+    background-color:pink;
+    color: aliceblue;
+    text-align: center; 
+}
+pre{
+    text-align: center;
+    height: auto;
+    background-color: lightblue;
+    color: whitesmoke;
+    font-size: 18px;
+}
